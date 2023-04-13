@@ -9,8 +9,25 @@
 .yellow {
     background-color: var(--highlight_color);
 }
+.blue {
+    background-color: var(--primary_color);
+}
+.white_text{
+    color: white;
+}
 .center {
     text-align: center;
+}
+.work img {
+    padding: .5rem;
+    border: black 5px solid;
+    border-radius: 1rem;
+}
+.work {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 0 auto; 
 }
 * {
     box-sizing: border-box;
@@ -43,6 +60,7 @@ img {
     margin: 0 auto;
     width: min(95%, 75rem);
 }
+
 .container_lg {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -54,8 +72,10 @@ img {
     grid-column: span 12;
 }
 
+
 /* Media Queries for larger screens than 768px */
 @media screen and (min-width: 48rem) {
+
 
     .col-span-2 {
         grid-column: span 2;
