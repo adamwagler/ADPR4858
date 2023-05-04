@@ -19,20 +19,25 @@
         
     <!-- Styles -->
         <link href="css/inclass.css" rel="stylesheet">
+        <link href="css/lightbox.css" rel="stylesheet" />
         
-    <!-- jQuery Scripts 
+    <!-- jQuery Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
             
                 });
-        </script>-->
+        </script>
 </head>
 
 <body>   
 
 
 <div class="container_lg blue">
+
+    <div class="card_col-span-3">Test</div>
+
+    
     <header class="col-span-6">
         <h1 class="white_text">Awesome Websites</h1>
     </header> 
@@ -41,9 +46,9 @@
     <!-- Navigation -->
     <nav class="col-span-6">
         <ul>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </div><!-- closes the large container -->
@@ -56,11 +61,14 @@
 
 
     <!-- Work -->
-    <section class="center spacing">
+    <section class="center spacing" id="work">
         <h2>Work</h2>
+        <p>
+            <a href="images/thumb.png" data-lightbox="image-1" data-title="My caption">Image #1</a>
+        </p>
 
         <div class="work">
-            <img src="images/thumb.png" alt="Project 1">
+            <a href="images/promoGraphic.jpg" data-lightbox="image-1" data-title="My caption"><img src="images/thumb.png" alt="Project 1"></a>
             <img src="images/thumb.png" alt="Project 2">
             <img src="images/thumb.png" alt="Project 3">
             <img src="images/thumb.png" alt="Project 4">
@@ -76,7 +84,7 @@
 
 
     <!-- Content -->
-    <article class="col-span-8">
+    <article class="col-span-8" id="about">
         <h2>Awesome Websites</h2>
         
         <p>Our web design company believes that a great website is more than just a collection of web pages. It's an extension of your brand, your voice, and your story. Our experienced designers and developers work closely with clients to create custom websites that are not only beautiful but also functional and user-friendly. We focus on responsive design, mobile optimization, and search engine optimization to ensure that your website reaches the widest possible audience and helps you achieve your business goals.</p>
@@ -103,11 +111,13 @@
 
 <div class="container">
     <!-- Footer  -->
-    <footer class="center">
+    <footer class="center" id="contact">
         <h2>Connect with us</h2>
         <p>Awesome Websites &copy; 2023</p>
     </footer>
     
 </div><!--close container --> 
+
+<script src="js/lightbox.js"></script>
 </body>
 </html>

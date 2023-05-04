@@ -36,6 +36,7 @@
 * {
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -141,6 +142,10 @@ nav li a:hover {
     }
     .col-span-10 {
         grid-column: span 10;
+    }
+    .card_col-span-3 {
+        grid-column: 9 / span 3;
+        background-color: red;
     }
     
     
